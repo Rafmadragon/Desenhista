@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns="http://www.thymeleaf.org">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+<body>
+    <h1>
+        Perfil
+    </h1>
+    <ol>
+        Nome:<br>
+        <li th:text="${mnome}"></li><br>
+        Sobrenome:<br>
+        <li th:text="${msobrenome}" ></li><br>
+        E-mail:<br>
+        <li th:text="${musername}"></li><br>
+        Username:<br>
+        <li th:text="${memail}"></li><br>
+
+    </ol>
+</body>
+</html>

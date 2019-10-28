@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns="http://www.thymeleaf.org">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <style>
+        .img-circle-novo{
+            border-radius:50%;
+            width: 100px;
+            height: 100px;
+        }
+        input{
+            width:700px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cadastro de Usuários</h1>
+    <img class="img-circle-novo" src="C:\Users\rafae\Downloads\tutorial-images\talin.jpg"></br><br>
+    <form action="cadastrarUsuario" method="POST">
+        Nome:<br>
+        <input type="text" name="nome"><br>
+        Sobrenome:<br>
+        <input type="text" name="sobrenome"><br>
+        E-mail:<br>
+        <input type="text" name="email"><br>
+        Username:<br>
+        <input type="text" name="username"><br>
+        <input type="submit" value="confirmar">
+    </form><br>
+</body>
+</html>
