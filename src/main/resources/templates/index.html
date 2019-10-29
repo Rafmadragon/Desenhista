@@ -8,8 +8,53 @@
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
     <style>
+        body {
+            text-align: -webkit-center;
+        }
         div.login{
             display: table-caption;
+            text-align: center;
+        }
+        button#btn-entrar{
+            width: -webkit-fill-available;
+            height: 50px;
+            background-color: black;
+            color: white;
+            border: none;
+            font-family: fantasy;
+            font-size: x-large;    
+        }
+        label{
+            color: white;
+            font-family: fantasy;
+            font-size: x-large;
+           
+        }
+        .espaco-login{
+            height: 120px;
+            background-color: #FFB1B1;
+        }
+        input#username {
+            margin-top: 15px;
+            margin-bottom: 15px;
+            height: 24px;
+            color:#DF4343;
+            font-family: monospace;
+            
+        }
+        input#senha {
+            height: 24px;
+            color:#DF4343;
+            font-family: monospace;
+        }
+        ::-webkit-input-placeholder {
+            color: #DF4343;
+        }  
+        .div-login{
+            background-color: black;
+            height: 30px;
+            text-align: center;
+            padding-top: 20px;
         }
     </style>
 </head>
@@ -17,11 +62,15 @@
     <div></div>
     <div class="login">
         <form action="/login" method="POST">
-        <label>LOGIN</label>
-        <input type="text" id="username">
-        <input type="password" id="senha">
+        <div class="div-login">
+            <label>LOGIN</label>
+        </div>    
+        <div class="espaco-login">
+            <input type="text" id="username" placeholder="Username ou e-mail">
+            <input type="password" id="senha" placeholder="senha">
+        </div>
         </form>
-        <button id="btn-entrar">ENTRAR</button>
+        <button id="btn-entrar">ENTRAR</button></br>
         <a href="cadastro.html">Registrar</a>
     </div>
 </body>
